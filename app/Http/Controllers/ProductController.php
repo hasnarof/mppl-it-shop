@@ -102,15 +102,15 @@ class ProductController extends Controller
         $products = Product::paginate(30);
         return view('search', compact('products'));
     }
-    public function productDetail($id)
+    public function productDetail($productId)
     {
-        $product = Product::find($id);
+        $product = Product::find($productId);
         return view('product', compact('product'));
     }
 
-    public function editProduct($id)
+    public function editProduct($productId)
     {
-        $product = Product::find($id);
+        $product = Product::find($productId);
         return view('edit-product',compact('product'));
     }
 
@@ -221,7 +221,7 @@ class ProductController extends Controller
         if($request->hasFile('foto2'))
         {
             unlink(public_path('images').'/'.$product->foto2);
-        }        
+        }
         if($request->hasFile('foto3'))
         {
             unlink(public_path('images').'/'.$product->foto3);

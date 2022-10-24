@@ -38,7 +38,7 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-    
+
     public function login(Request $request)
     {
         $input = $request->all();
@@ -46,21 +46,17 @@ class LoginController extends Controller
             'email' => 'required|email',
             'password' => 'required',
         ]);
-        
-        if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
-        {
-            if(auth()->user()->is_admin == 1)
-            {
+
+        if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
+            if (auth()->user()->is_admin == 1) {
                 return back();
             }
-            else
-            {
-                return back();
-            }
+
+            return back();
+
         }
-        else
-        {
-            return redirect()->route('home')->with('error','email atau password salah');
-        }
+
+        return redirect()->route('home')->with('error','email atau password salah');
+
     }
 }
