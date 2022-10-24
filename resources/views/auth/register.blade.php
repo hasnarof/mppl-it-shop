@@ -45,7 +45,8 @@
               <div class="col">
                 <p class="card-text mb-0 fw-bold">Email</p>
                 <div class="input-group input-group-md">
-                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
+                  <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email"
+                         value="{{ old('email') }}" required autocomplete="email" placeholder="Email">
                   @error('email')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -58,7 +59,8 @@
               <div class="col">
                 <p class="card-text mb-0 fw-bold">Password</p>
                 <div class="input-group input-group-md">
-                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password" placeholder="Password">
+                  <input id="password" type="password" class="form-control @error('password') is-invalid @enderror"
+                         name="password" required autocomplete="new-password" placeholder="Password">
                   @error('password')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -69,7 +71,8 @@
               <div class="col">
                 <p class="card-text mb-0 fw-bold">Confirm Password</p>
                 <div class="input-group input-group-md">
-                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Confirm Password">
+                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
+                           required autocomplete="new-password" placeholder="Confirm Password">
                 </div>
               </div>
             </div>
@@ -77,7 +80,8 @@
               <div class="col">
                 <p class="card-text mb-0 fw-bold">Nomor HP</p>
                 <div class="input-group input-group-md">
-                  <input id="no_hp" type="text" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp" value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus placeholder="Nomor HP">
+                  <input id="no_hp" type="text" class="form-control @error('no_hp') is-invalid @enderror" name="no_hp"
+                         value="{{ old('no_hp') }}" required autocomplete="no_hp" autofocus placeholder="Nomor HP">
                   @error('no_hp')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -88,7 +92,8 @@
               <div class="col">
                 <p class="card-text mb-0 fw-bold">Nama</p>
                 <div class="input-group input-group-md">
-                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nama">
+                  <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name"
+                         value="{{ old('name') }}" required autocomplete="name" autofocus placeholder="Nama">
                   @error('name')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -101,7 +106,8 @@
               <div class="col">
                 <p class="card-text mb-0 fw-bold">Kabupaten / Kota</p>
                 <div class="input-group input-group-md">
-                  <input id="kota" type="text" class="form-control @error('kota') is-invalid @enderror" name="kota" value="{{ old('kota') }}" required autocomplete="kota" autofocus placeholder="Kabupate/Kota">
+                  <input id="kota" type="text" class="form-control @error('kota') is-invalid @enderror" name="kota"
+                         value="{{ old('kota') }}" required autocomplete="kota" autofocus placeholder="Kabupate/Kota">
                   @error('kota')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -112,7 +118,9 @@
               <div class="col-4">
                 <p class="card-text mb-0 fw-bold">Kode Pos</p>
                 <div class="input-group input-group-md">
-                  <input id="kode_pos" type="text" class="form-control @error('kode_pos') is-invalid @enderror" name="kode_pos" value="{{ old('kode_pos') }}" required autocomplete="kode_pos" autofocus placeholder="Kode Pos">
+                  <input id="kode_pos" type="text" class="form-control @error('kode_pos') is-invalid @enderror"
+                         name="kode_pos" value="{{ old('kode_pos') }}" required autocomplete="kode_pos" autofocus
+                         placeholder="Kode Pos">
                   @error('kode_pos')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>
@@ -125,7 +133,9 @@
               <div class="col">
                 <p class="card-text mb-0 fw-bold">Alamat</p>
                 <div class="input-group input-group-md">
-                  <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror" name="alamat" value="{{ old('alamat') }}" required autocomplete="alamat" autofocus placeholder="Alamat">
+                  <input id="alamat" type="text" class="form-control @error('alamat') is-invalid @enderror"
+                         name="alamat" value="{{ old('alamat') }}" required autocomplete="alamat" autofocus
+                         placeholder="Alamat">
                   @error('alamat')
                     <span class="invalid-feedback" role="alert">
                         <strong>{{ $message }}</strong>

@@ -146,10 +146,7 @@
           <div class="col-3 py-3">
             <div class="--sticky-table-item" style="z-index: 1;">
               <button type="button" class="btn btn-primary btn-sm rounded-pill w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#modal-batalkan-pesanan">Batalkan Pesanan</button>
-<<<<<<< HEAD
-=======
               <p class="--sticky-table-item mb-0 text-secondary w-100 text-center">Order ID: 9000</p>
->>>>>>> origin
             </div>
           </div>
         </div>
@@ -193,10 +190,7 @@
           <div class="col-3 py-3">
             <div class="--sticky-table-item" style="z-index: 1;">
               <button type="button" class="btn btn-outline-primary btn-sm rounded-pill w-100 fw-bold" data-bs-toggle="modal" data-bs-target="#modal-catatan-teknisi">Catatan Teknisi</button>
-<<<<<<< HEAD
-=======
               <p class="--sticky-table-item mb-0 text-secondary w-100 text-center">Order ID: 8999</p>
->>>>>>> origin
             </div>
           </div>
         </div>
